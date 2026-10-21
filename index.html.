@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PAII GANTENGG STORE</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#080d1b;color:#fff;font-family:Arial,sans-serif}header{text-align:center;padding:35px 15px;background:linear-gradient(135deg,#172554,#6d28d9)}h1{color:#67e8f9;font-size:32px}main{max-width:650px;margin:auto;padding:18px}.panel{background:#151d32;border:1px solid #34415f;border-radius:15px;padding:18px;margin-bottom:16px}h2{margin-top:0}.item{padding:12px;margin:8px 0;background:#202b45;border-radius:9px;display:flex;justify-content:space-between;gap:8px}label{display:block;margin:12px 0 6px}input,select{width:100%;padding:12px;border-radius:8px;border:1px solid #52617e;background:#0b1020;color:white}button{width:100%;padding:13px;margin-top:16px;background:#67e8f9;color:#07111e;font-weight:bold;border:0;border-radius:9px;font-size:16px}.note{color:#bdc9df;font-size:13px}footer{text-align:center;padding:20px;color:#bdc9df}
+</style>
+</head>
+<body>
+<header><h1>PAII GANTENGG STORE</h1><p>🔥 TOP UP FREE FIRE 🔥</p><p>Diamond • Membership • Gaming</p></header>
+<main>
+<section class="panel"><h2>💎 Pilihan Produk</h2>
+<div class="item"><span>50 Diamond</span><b>Konfirmasi harga</b></div>
+<div class="item"><span>100 Diamond</span><b>Konfirmasi harga</b></div>
+<div class="item"><span>210 Diamond</span><b>Konfirmasi harga</b></div>
+<div class="item"><span>355 Diamond</span><b>Konfirmasi harga</b></div>
+<div class="item"><span>720 Diamond</span><b>Konfirmasi harga</b></div>
+<p class="note">Tanyakan harga dan ketersediaan kepada admin sebelum membayar.</p></section>
+<section class="panel"><h2>🛒 Buat Pesanan</h2>
+<label>ID Player Free Fire</label><input id="pid" placeholder="Masukkan ID Player">
+<label>Pilih produk</label><select id="prod"><option>50 Diamond</option><option>100 Diamond</option><option>210 Diamond</option><option>355 Diamond</option><option>720 Diamond</option></select>
+<button onclick="order()">BUAT RINGKASAN PESANAN</button><p id="out"></p>
+<p class="note">Form ini hanya membuat ringkasan. Pembayaran dan pengiriman otomatis belum tersedia.</p></section>
+<section class="panel"><h2>📌 Informasi</h2><p>Pastikan ID Player benar. Konfirmasi harga dengan admin sebelum melakukan pembayaran. Jangan bagikan kata sandi atau kode OTP.</p></section>
+</main><footer>© PAII GANTENGG STORE</footer>
+<script>function order(){let id=document.getElementById('pid').value.trim();let p=document.getElementById('prod').value;document.getElementById('out').textContent=id?'Pesanan: '+p+' | ID Player: '+id+'. Silakan konfirmasi harga dengan admin.':'Masukkan ID Player terlebih dahulu.'}</script>
+</body></html>
